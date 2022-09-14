@@ -1,1 +1,26 @@
+/*Figure out how to: 
+  1.outline the font
+  */
 
+body {
+    display: flex;
+    flex-direction: column;
+    color: rgb(102, 98, 98);
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+.header {
+    text-indent: .25in;
+    color: rgb(61, 40, 11);
+    background-color: aliceblue;
+}
+
+
+h1::after {
+    content: 'Wareing';
+    color: rgb(87, 3, 3);
+}
+
+h5 {
+    text-align: end;
+}
