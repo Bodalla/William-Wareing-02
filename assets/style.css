@@ -2,25 +2,140 @@
   1.outline the font
   */
 
+:root {
+    --defpad: .25in
+}
+
 body {
     display: flex;
     flex-direction: column;
-    color: rgb(102, 98, 98);
+    color: rgb(0, 0, 0);
     font-family: sans-serif, Arial, Helvetica;
+    background-color: silver;
+    border-style:ridge;
+    border-bottom-style:hidden;
+    border-color: gray;
 }
 
-.header {
-    text-indent: .25in;
-    color: rgb(61, 40, 11);
-    background-color: aliceblue;
+.main-header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(87, 6, 6);
+    background-color: rgb(68, 131, 185);
+    padding: var(--defpad);
+    
+}
+
+a {
+    color: rgb(87, 6, 6);
+}
+
+h1 {
+    font-size: 21pt;
 }
 
 
 h1::after {
     content: 'Wareing';
-    color: rgb(87, 3, 3);
+    color: rgb(87, 6, 6);
 }
 
-h5 {
-    text-align: end;
+ul {
+    display:flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width:100%;
 }
+
+li {
+    display: block;
+    padding-left:.2in;
+    padding-top:.06in;
+}
+
+.about-me {
+    line-height: .23in;
+    padding-right:2.5in;
+    margin: 0in 0in 0in 0in;
+}
+
+.work {
+    line-height: .23in;
+    padding-right:2.5in;
+    margin: 0in 0in 0in 0in;
+}
+
+p {
+    background-color: rgb(68, 131, 185);
+    display:block;
+    padding-top:.15in;
+    padding-right:var(--defpad);
+    padding-bottom:.25in;
+    Padding-left:var(--defpad);
+    border-style: ridge;
+    border-bottom-style:hidden;
+    border-top-style:hidden;
+    border-left-style: hidden;
+    border-color: gray;
+    text-indent:.2in;
+    
+   
+}
+
+.about-me header {
+    display:block;
+    block-size: .7in;
+    font-size:20pt;
+    background-color: silver;
+    Padding-left:var(--defpad);
+    padding-top: .25in;
+    padding-bottom:.25in;
+    border-color: gray;
+    border-style:ridge;
+    border-left-style: hidden;
+}
+
+.work header {
+    display:block;
+    block-size: .7in;
+    font-size:20pt;
+    background-color: silver;
+    Padding-left:var(--defpad);
+    padding-top: .25in;
+    padding-bottom:.25in;
+    border-color: gray;
+    border-style:ridge;
+    border-left-style: hidden;
+}
+
+div {
+    display:flex;
+    flex-direction: row;
+    flex: 2 2 200px;
+    flex-wrap:wrap;
+    height:100vh;
+    justify-content: space-between;
+    padding-top:.25in;
+}
+
+img {
+    display:flex;
+    flex-direction: column;
+    height: 400px;
+    width:430px;
+    align-items: stretch;
+    padding-bottom: .5in;
+}
+
+.proof-of-concept img {
+    height:520px;
+    width:550px;
+}
+
+div header {
+    border-style:ridge;
+    border-color:gray;
+    text-align: center;
+}
+    
