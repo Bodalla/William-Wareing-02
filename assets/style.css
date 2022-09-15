@@ -1,5 +1,7 @@
-/*Figure out how to: 
-  1.outline the font
+/*Add more to the root to
+clean up the code redundancies.
+Also, clean up the code redundancies
+in general.
   */
 
 :root {
@@ -122,14 +124,14 @@ img {
     min-width: none;
     min-height: none;
     display:flex;
-    height: 400px;
-    width:430px;
+    height: 350px;
+    width:450px;
     align-items: stretch;
     margin-bottom: .5in;
 }
 
 .proof-of-concept img {
-    height:520px;
+    height:400px;
     width:550px;
 }
 
@@ -139,9 +141,11 @@ div header {
     text-align: center;
 }
 
-/*THIS IS DRIVING ME LITERALLY
+/*THIS BUG IS DRIVING ME LITERALLY
 INSANE AND IF I WORK ON THIS ANYMORE
-I'M GOING TO START BREAKING MY FURNITURE*/
+I'M GOING TO START BREAKING MY FURNITURE... 
+fixing with a basic margin for now. Please
+have mercy.*/
 .contact-me {
     margin-top: 10in;
     display:flex;
